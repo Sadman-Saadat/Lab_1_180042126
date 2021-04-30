@@ -39,3 +39,9 @@ fs.readFile('contents/renamedFile.txt', "utf-8", (err, data)=>{
 });
 
 console.log("after");
+
+fs.unlink("./Contents/renamedFile.txt", (err)=>{
+    if(!err){
+        console.log("Deleted successfully");
+    }
+});
